@@ -19,3 +19,17 @@ Switched to a new branch 'Luyi'
 (base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ touch commands_Luyi.txt
 (base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ 
 
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ vim commands_Luyi.txt
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ git add *
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ git commit -m "Luyi Project 1 assignment 3"
+[Luyi 0d77612] Luyi Project 1 assignment 3
+ 3 files changed, 25 insertions(+), 1 deletion(-)
+ create mode 100644 commands_Luyi.txt
+ create mode 100644 names_of_teammates.txt
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ git push
+fatal: The current branch Luyi has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Luyi
+
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ 
