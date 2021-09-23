@@ -1,0 +1,35 @@
+
+(base) airbears2-10-142-157-170:~ jianluyi$ cd Desktop/Year\ 3\ Fall/Sociol\ 273L\ Computational\ Social\ Science\ /Assignments/GitHub\ Collaboration\ Practice/
+(base) airbears2-10-142-157-170:GitHub Collaboration Practice jianluyi$ git clone https://github.com/vqsierra/CSS_Project1_Team1_Fall2021.git
+Cloning into 'CSS_Project1_Team1_Fall2021'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+(base) airbears2-10-142-157-170:GitHub Collaboration Practice jianluyi$ git checkout -b Luyi 
+fatal: not a git repository (or any of the parent directories): .git
+(base) airbears2-10-142-157-170:GitHub Collaboration Practice jianluyi$ cd CSS_Project1_Team1_Fall2021/
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ git checkout -b Luyi 
+Switched to a new branch 'Luyi'
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ vim README.md
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ touch names_of_teammates.txt
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ vim names_of_teammates.txt
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ touch commands_Luyi.txt
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ 
+
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ vim commands_Luyi.txt
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ git add *
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ git commit -m "Luyi Project 1 assignment 3"
+[Luyi 0d77612] Luyi Project 1 assignment 3
+ 3 files changed, 25 insertions(+), 1 deletion(-)
+ create mode 100644 commands_Luyi.txt
+ create mode 100644 names_of_teammates.txt
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ git push
+fatal: The current branch Luyi has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Luyi
+
+(base) airbears2-10-142-157-170:CSS_Project1_Team1_Fall2021 jianluyi$ 
