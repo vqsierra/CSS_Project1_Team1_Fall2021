@@ -107,7 +107,7 @@ README.md		commands_Val.md
 commands_Luyi.txt	names_of_teammates.txt
 (base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % vim names_of_teammates.txt
 (base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % vim commands_Val.md
-(base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % 
+(base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % vim commands_Val.md
 (base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % git add *
 (base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % git commit -m "Val Project 1 Part 3"
 [Val a719e57] Val Project 1 Part 3
@@ -136,3 +136,13 @@ Branch 'Val' set up to track remote branch 'Val' from 'origin'.
 (base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % ls
 README.md		commands_Val.md
 commands_Luyi.txt	names_of_teammates.txt
+(base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % vim commands_Val.md
+(base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % git add *
+(base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % git push
+Everything up-to-date
+(base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % touch commands_Val.txt
+(base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % ls
+README.md		commands_Val.md		names_of_teammates.txt
+commands_Luyi.txt	commands_Val.txt
+(base) home@Valentins-MacBook-Pro CSS_Project1_Team1_Fall2021 % vim commands_Val.txt
+
