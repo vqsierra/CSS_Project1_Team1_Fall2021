@@ -1,0 +1,146 @@
+Last login: Sat Sep 25 00:10:11 on ttys000
+(base) ryan@Big ~ % git status
+fatal: not a git repository (or any of the parent directories): .git
+(base) ryan@Big ~ % git clone https://github.com/ryankarnoski/ryankarnoski.github.io.git
+Cloning into 'ryankarnoski.github.io'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+(base) ryan@Big ~ % ls
+Applications			Movies
+CSS_Project1_Team1_Fall2021	Music
+Creative Cloud Files		Pictures
+Desktop				Public
+Documents			Zotero
+Downloads			opt
+Library				ryankarnoski.github.io
+(base) ryan@Big ~ % cd ryankarnoski.github.io
+(base) ryan@Big ryankarnoski.github.io % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) ryan@Big ryankarnoski.github.io % ls
+README.md
+(base) ryan@Big ryankarnoski.github.io % cd ..
+(base) ryan@Big ~ % cd ~
+(base) ryan@Big ~ %  git clone https://github.com/vqsierra/CSS_Project1_Team1_Fall2021.git
+fatal: destination path 'CSS_Project1_Team1_Fall2021' already exists and is not an empty directory.
+(base) ryan@Big ~ % ls
+Applications			Movies
+CSS_Project1_Team1_Fall2021	Music
+Creative Cloud Files		Pictures
+Desktop				Public
+Documents			Zotero
+Downloads			opt
+Library				ryankarnoski.github.io
+(base) ryan@Big ~ % cd CSS_Project1_Team1_Fall2021
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % ls
+README.md		commands_Val.txt
+commands_Luyi.txt	names_of_teammates.txt
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % open names_of_teammates.txt 
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   names_of_teammates.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % echo This is some text > myfile.txt
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % ls
+README.md		commands_Val.txt	names_of_teammates.txt
+commands_Luyi.txt	myfile.txt
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % myfile.txt
+zsh: command not found: myfile.txt
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % open myfile.txt
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % ls
+README.md		commands_Ryan.txt	names_of_teammates.txt
+commands_Luyi.txt	commands_Val.txt
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   names_of_teammates.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	commands_Ryan.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git add commands_Ryan.txt
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git checkout
+A	commands_Ryan.txt
+M	names_of_teammates.txt
+Your branch is up to date with 'origin/main'.
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git checkout -b Ryan
+Switched to a new branch 'Ryan'
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git status
+On branch Ryan
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   commands_Ryan.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   names_of_teammates.txt
+
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git add names_of_teammates.txt 
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git status names_of_teammates.txt
+On branch Ryan
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   names_of_teammates.txt
+
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git status
+On branch Ryan
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   commands_Ryan.txt
+	modified:   names_of_teammates.txt
+
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git commit -m "I am committing my changes to the group project repo"
+[Ryan d96752b] I am committing my changes to the group project repo
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 commands_Ryan.txt
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git push
+fatal: The current branch Ryan has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Ryan
+
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git push origin Ryan
+Username for 'https://github.com': ryankarnoski
+Password for 'https://ryankarnoski@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/vqsierra/CSS_Project1_Team1_Fall2021.git/'
+(base) ryan@Big CSS_Project1_Team1_Fall2021 %  git push origin Ryan
+Username for 'https://github.com': ryankarnoski
+Password for 'https://ryankarnoski@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/vqsierra/CSS_Project1_Team1_Fall2021.git/'
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % git push origin Ryan
+Username for 'https://github.com': ryankarnoski
+Password for 'https://ryankarnoski@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 436 bytes | 436.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'Ryan' on GitHub by visiting:
+remote:      https://github.com/vqsierra/CSS_Project1_Team1_Fall2021/pull/new/Ryan
+remote: 
+To https://github.com/vqsierra/CSS_Project1_Team1_Fall2021.git
+ * [new branch]      Ryan -> Ryan
+(base) ryan@Big CSS_Project1_Team1_Fall2021 % 
